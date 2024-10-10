@@ -37,6 +37,14 @@ suspeitosRoutes.post("/", (req, res) => {
     });
   }
 
+  // Validação do envolvimento
+  if (envolvimento != "Sim" && envolvimento != "Não") {
+    return res.status(400).send({
+      message:
+        "A classificação do envolvimento do suspeito é obrigatória! Exiba se o seu envolvimento é Sim ou Não.",
+    });
+  }
+
   // Criação de um novo suspeito
   const novoSuspeito = {
     id: Math.floor(Math.random() * 1000000),

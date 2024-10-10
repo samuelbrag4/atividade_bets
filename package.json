@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Atividade proposta pelos professores: Felipe Santos e Marcelo Carboni. Com o objetivo de criar um sistema de cadrastos de suspeitos envolvidos em lavagem de dinheiro no jogo de apostas ",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
